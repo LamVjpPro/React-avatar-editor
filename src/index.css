@@ -13,3 +13,9 @@ body {
   height: 100%;
   /* font-size: 30px; */
 }
+
+.editor-canvas {
+  width: 100% !important;
+  object-fit: cover;
+  height: auto !important;
+}

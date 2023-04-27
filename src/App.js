@@ -46,7 +46,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="p-6 flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
+      <div className="p-8 flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
         <div>
           <ReactAvatarEditor
             scale={parseFloat(this.state.scale)}
@@ -72,7 +72,7 @@ class App extends React.Component {
         </div>
         Zoom:
         <input
-          className="ml-1 items-center"
+          className="text-white items-center"
           name="scale"
           type="range"
           onChange={this.handleScale}
@@ -95,13 +95,13 @@ class App extends React.Component {
           Rotate:
           <button
             onClick={this.rotateLeft}
-            className="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5"
+            className="text-white ml-3 bg-purple-500 hover:purple-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5"
           >
             Left
           </button>
           <button
             onClick={this.rotateRight}
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5"
+            className="text-white bg-purple-500 hover:purple-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5"
           >
             Right
           </button>
