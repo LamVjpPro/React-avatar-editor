@@ -46,7 +46,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="p-8 flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
+      <div className="p-8 m-3 flex flex-col bg-white rounded-lg border border-gray-200 shadow-md">
         <div>
           <ReactAvatarEditor
             scale={parseFloat(this.state.scale)}
@@ -61,6 +61,7 @@ class App extends React.Component {
           />
         </div>
         <br />
+        <div></div>
         <div className="flex items-center">
           New File:
           <input
