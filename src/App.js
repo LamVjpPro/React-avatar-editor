@@ -62,7 +62,7 @@ class App extends React.Component {
         </div>
         <br />
         <div></div>
-        <div className="flex items-center">
+        <div className="ml-[10px] flex items-center">
           New File:
           <input
             className="ml-2 mb-2 items-center"
@@ -71,28 +71,33 @@ class App extends React.Component {
             onChange={this.handleNewImage}
           />
         </div>
-        Zoom:
-        <input
-          className="text-white items-center"
-          name="scale"
-          type="range"
-          onChange={this.handleScale}
-          min={this.state.allowZoomOut ? "0.1" : "1"}
-          max="2"
-          step="0.01"
-          defaultValue="1"
-        />
-        Rotation:
-        <input
-          name="rotation"
-          type="range"
-          onChange={this.rotateScale}
-          min="0"
-          max="180"
-          step="1"
-          defaultValue="0"
-        />
-        <div className="flex space-x-5 items-center mt-1">
+        <div className="ml-[10px]">
+          Zoom:
+          <input
+            className=" items-center w-[100%]"
+            name="scale"
+            type="range"
+            onChange={this.handleScale}
+            min={this.state.allowZoomOut ? "0.1" : "1"}
+            max="2"
+            step="0.01"
+            defaultValue="1"
+          />
+        </div>
+        <div className="ml-[10px]">
+          Rotation:
+          <input
+            className="w-[100%]"
+            name="rotation"
+            type="range"
+            onChange={this.rotateScale}
+            min="0"
+            max="180"
+            step="1"
+            defaultValue="0"
+          />
+        </div>
+        <div className="ml-[10px] flex space-x-5 items-center mt-1">
           Rotate:
           <button
             onClick={this.rotateLeft}
