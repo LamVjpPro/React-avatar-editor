@@ -4,7 +4,7 @@ import ReactAvatarEditor from "react-avatar-editor";
 
 class App extends React.Component {
   state = {
-    image: "https://htran844.github.io/hihi/img/ig/i11.jpg",
+    image: "https://htran844.github.io/hihi/img/ig/i27.jpg",
     allowZoomOut: false,
     position: { x: 0.5, y: 0.5 },
     scale: 1,
