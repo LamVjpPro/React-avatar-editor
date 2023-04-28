@@ -61,8 +61,7 @@ class App extends React.Component {
           />
         </div>
         <br />
-        <div></div>
-        <div className="ml-[10px] flex items-center">
+        <div className="ml-3 mr-3 flex items-center">
           New File:
           <input
             className="ml-2 mb-2 items-center"
@@ -71,7 +70,7 @@ class App extends React.Component {
             onChange={this.handleNewImage}
           />
         </div>
-        <div className="ml-[10px]">
+        <div className="ml-3 mr-3">
           Zoom:
           <input
             className=" items-center w-[100%]"
@@ -84,7 +83,7 @@ class App extends React.Component {
             defaultValue="1"
           />
         </div>
-        <div className="ml-[10px]">
+        <div className="ml-3 mr-3">
           Rotation:
           <input
             className="w-[100%]"
@@ -97,7 +96,7 @@ class App extends React.Component {
             defaultValue="0"
           />
         </div>
-        <div className="ml-[10px] flex space-x-5 items-center mt-1">
+        <div className="ml-3 mr-3 flex space-x-5 items-center mt-1">
           Rotate:
           <button
             onClick={this.rotateLeft}
